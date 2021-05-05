@@ -17,6 +17,7 @@ class Player:
     def __init__(self, position="Guard"):
         self._position = position
 
+    # ----- Position ----- #
     @property  # using property decorator
     # getter
     def position(self):
@@ -24,8 +25,8 @@ class Player:
 
     # setter
     @position.setter
-    def position(self, position):
-        self._position = position
+    def position(self, p):
+        self._position = p
 
     # deleter
     @position.deleter
